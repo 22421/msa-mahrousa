@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="sign in" content="width=device-width,initial-scale=1.0">
+        <title>sign in</title>
+        <link rel="stylesheet" href="stylerege.css">
+        <script src="https://kit.fontawesome.com/c42544e24a8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <i class="fas fa-paper-plane"></i>
+                <div class="input-group">
+                    <label>user Name</label>
+                    <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+                    <span id="name-error"></span>
+                </div>
+                <div class="input-group">
+                    <label>phone No.</label>
+                    <input type="tel" placeholder="123 456 78901" id="contact-phone" onkeyup="validatephone()">
+                    <span id="phone-error"></span>
+                </div>
+                <div class="input-group">
+                    <label>Email Id</label>
+                    <input type="email" placeholder="Enter Email"id="contact-email" onkeyup="validateEmail()">
+                    <span id="email-error"></span>
+                </div>
+               
+                <div class="input-group">
+                    <label>password</label>
+                    <!--<input type="password" placeholder="Enter password"id="contact-email" onkeyup="checkPwd(str)">-->
+                    <input type="text" name="password" class="inputtext" placeholder="password" onchange="checkPwd(this.value)"/>
+                    <span id="email-error"></span>
+                </div>
+
+                <!--<button><a href="index flight.html"> sumbit</a></button>-->
+                <!--<button type="submit"  value ="submit" onclick="return checkPwd(str) "> <a href="index.html">submit </a></button>-->
+                <button type="button"   onclick="return myfunction() "> <a href="index.html">submit </a> </button>
+                <span id="subit-error"></span>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
